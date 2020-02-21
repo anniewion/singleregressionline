@@ -1,6 +1,8 @@
 '''
-This is an extremely messy collaborative document for the AI & ML course at MPS
-2-19-20
+Annie Wion
+2/21/20
+This is a comparison of global temperature anomalies yearly over my lifetime.
+Source: https://climate.nasa.gov/vital-signs/global-temperature/
 '''
 
 import numpy as np
@@ -43,8 +45,8 @@ def plot_regression_line(x, y, b):
 
 def main():
     #observations
-    x = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-    y = np.array([1, 3, 2, 5, 7, 8, 8, 9, 10, 12])
+    x = np.array([2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019])
+    y = np.array([0.68, 0.64, 0.66, 0.54, 0.66, 0.72, 0.61, 0.64, 0.68, 0.75, 0.90, 1.02, 0.92, 0.85, 0.98])
 
     # estimated coefficients
     b = estimate_coef(x, y)
